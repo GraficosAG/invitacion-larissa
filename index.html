@@ -50,7 +50,7 @@ header{padding:38px 18px 15px;background:#f3dfe4}h1{font-size:clamp(42px,10vw,80
 </div></section>
 <section aria-labelledby="dress-title"><div class="card dress-card"><span class="event-icon" aria-hidden="true"><svg><use href="#i-formal"/></svg></span><div class="eyebrow">Para esta ocasión especial</div><h2 id="dress-title">Código de vestimenta</h2><p style="font-size:24px;color:var(--rose);margin-bottom:0">Formal</p></div></section>
 <section><img class="photo" src="foto3.png" alt="Retrato de Daminy Vianey"><h2>Confirma tu asistencia</h2><div class="card"><p id="family"></p><p id="tickets"></p><label>¿Cuántas personas asistirán? <input id="attending" type="number" min="0" value="0"></label><p><button class="btn" id="confirm">Confirmar por WhatsApp</button></p><small>Tu confirmación se enviará por WhatsApp. Revisa el mensaje y presiona Enviar para completar el proceso.</small></div></section>
-<footer>Con cariño, Daminy Vianey ♡<p class="music-credit">Música: “There is Romance” — Kevin MacLeod (<a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a>). Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a>.</p></footer>
+<footer>Con cariño, Daminy Vianey ♡.</p></footer>
 <script>
 const q=new URLSearchParams(location.search),name=q.get('familia')||'Familia de prueba',tickets=Math.max(0,Number.parseInt(q.get('boletos')||'6',10)||0);
 document.getElementById('family').textContent=name;document.getElementById('tickets').textContent='Boletos asignados: '+tickets;
