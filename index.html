@@ -6,103 +6,60 @@
 <title>XV años de Daminy Vianey</title>
 <style>
 :root{--rose:#9e6075;--light:#fff7f8;--gold:#ad8b54}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--light);font-family:Georgia,serif;color:#674452;text-align:center}
-body.locked{overflow:hidden}
-header{padding:38px 18px 15px;background:#f3dfe4}
-h1{font-size:clamp(42px,10vw,80px);font-weight:normal;margin:12px 0;color:var(--rose)}
-h2{font-size:29px;font-weight:normal;color:var(--rose)}
-p{line-height:1.7}
-section{max-width:740px;margin:auto;padding:35px 22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--light);font-family:Georgia,serif;color:#674452;text-align:center}body.locked{overflow:hidden}
+header{padding:38px 18px 15px;background:#f3dfe4}h1{font-size:clamp(42px,10vw,80px);font-weight:normal;margin:12px 0;color:var(--rose)}h2{font-size:29px;font-weight:normal;color:var(--rose)}p{line-height:1.7}section{max-width:740px;margin:auto;padding:35px 22px}
 .photo{width:100%;height:auto;max-height:none;object-fit:contain;border-radius:100px 100px 12px 12px;box-shadow:0 8px 25px #9e607533}
-.eyebrow{letter-spacing:4px;color:var(--gold);text-transform:uppercase}
-.card{background:white;border:1px solid #e7c9d0;border-radius:20px;padding:24px;margin:18px auto;box-shadow:0 4px 18px #9e607515}
-.btn{display:inline-block;border:0;background:var(--rose);color:white;padding:14px 22px;border-radius:30px;text-decoration:none;font:16px Arial,sans-serif;cursor:pointer;margin:8px}
-.secondary{background:#ac8958}
-.counter{font:20px Arial,sans-serif;color:var(--rose)}
-input{font-size:18px;width:90px;padding:10px;border:1px solid #d8aeb9;border-radius:8px}
-footer{padding:30px;background:#f3dfe4}
-small{color:#795f68}
-/* Portada con sobre */
-#intro{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:22px;background:radial-gradient(circle at 50% 20%,#fffafb,#f1dbe2 75%);transition:opacity .8s ease,visibility .8s ease}
-#intro.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.intro-inner{width:min(94vw,540px)}
-.intro-title{font-size:clamp(20px,5vw,30px);font-weight:normal;color:var(--rose);margin:0 0 8px}
-.intro-subtitle{color:#89636f;margin:0 0 25px;font-size:15px;letter-spacing:2px}
-.envelope{width:min(88vw,460px);height:clamp(210px,55vw,285px);margin:auto;position:relative;perspective:900px;filter:drop-shadow(0 15px 18px #89576a44)}
-.envelope-back{position:absolute;inset:0;background:#dbaebd;border:2px solid #c69b72;border-radius:5px}
-.letter{position:absolute;left:8%;right:8%;top:11%;height:77%;background:#fffaf5;border:2px solid #d4b47a;border-radius:6px;padding:20px 8px;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:transform 1s .25s ease;z-index:2}
-.letter strong{font-size:clamp(25px,6vw,39px);font-weight:normal;color:var(--rose)}
-.letter span{font-size:13px;letter-spacing:3px;color:var(--gold);margin-bottom:8px}
-.envelope-front{position:absolute;inset:0;z-index:3;background:#e7beca;clip-path:polygon(0 0,50% 53%,100% 0,100% 100%,0 100%);border-radius:5px}
-.envelope-front:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#e9c4cf 0%,#d9aab9 100%);clip-path:polygon(0 100%,50% 47%,100% 100%)}
-.flap{position:absolute;left:0;right:0;top:0;height:56%;background:#efcbd4;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .85s ease;z-index:5;backface-visibility:hidden}
-.seal{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);z-index:6;width:78px;height:78px;border-radius:50%;border:3px solid #f5dfad;background:radial-gradient(circle,#d8b777,#a78243);color:white;font:28px Georgia,serif;box-shadow:0 3px 10px #7d543e66;cursor:pointer;transition:opacity .3s}
-.seal:focus-visible{outline:3px solid #754253;outline-offset:5px}
-.intro-hint{font-size:15px;margin:25px 0 0;color:#805766}
-.envelope.open .flap{transform:rotateX(180deg);z-index:1}
-.envelope.open .seal{opacity:0;pointer-events:none}
-.envelope.open .letter{transform:translateY(-75px)}
-#musicToggle{position:fixed;right:15px;bottom:17px;z-index:100;background:#fffaf9;color:var(--rose);border:1px solid #d4b47a;border-radius:30px;padding:12px 16px;box-shadow:0 3px 12px #9e607533;cursor:pointer;font:14px Arial,sans-serif;display:none}
-#musicToggle.visible{display:block}
-.music-credit{font-size:12px;line-height:1.5;margin:15px auto 0;max-width:580px}
-.music-credit a{color:#79536b}
-@media(prefers-reduced-motion:reduce){.flap,.letter,#intro{transition-duration:.01ms!important}}
+.eyebrow{letter-spacing:4px;color:var(--gold);text-transform:uppercase}.card{background:white;border:1px solid #e7c9d0;border-radius:20px;padding:24px;margin:18px auto;box-shadow:0 4px 18px #9e607515}
+.btn{display:inline-block;border:0;background:var(--rose);color:white;padding:14px 22px;border-radius:30px;text-decoration:none;font:16px Arial,sans-serif;cursor:pointer;margin:8px}.secondary{background:#ac8958}.counter{font:20px Arial,sans-serif;color:var(--rose)}input{font-size:18px;width:90px;padding:10px;border:1px solid #d8aeb9;border-radius:8px}footer{padding:30px;background:#f3dfe4}small{color:#795f68}
+/* Íconos vectoriales dorados */
+.event-icon{display:block;width:43px;height:43px;margin:0 auto 12px;color:var(--gold)}.event-icon svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.timeline{max-width:570px;margin:25px auto 0;text-align:left;position:relative}.timeline:before{content:"";position:absolute;top:30px;bottom:30px;left:28px;width:2px;background:#e7c9d0}.timeline-item{display:flex;align-items:center;gap:20px;position:relative;padding:12px 0}.timeline-item .event-icon{flex:0 0 58px;width:58px;height:58px;padding:13px;margin:0;border-radius:50%;background:#fff;border:1px solid #e7c9d0;z-index:1}.timeline-item .event-icon svg{width:100%;height:100%}.timeline-copy{flex:1;border-bottom:1px solid #eedde1;padding:9px 0 15px}.timeline-item:last-child .timeline-copy{border-bottom:0}.timeline-time{font:15px Arial,sans-serif;color:var(--gold);margin:0 0 5px}.timeline-name{font-size:21px;color:var(--rose);margin:0}.dress-card{padding:34px 24px}.dress-card h2{margin:5px 0 0}
+/* Portada con sobre: se conserva el funcionamiento original */
+#intro{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:22px;background:radial-gradient(circle at 50% 20%,#fffafb,#f1dbe2 75%);transition:opacity .8s ease,visibility .8s ease}#intro.hidden{opacity:0;visibility:hidden;pointer-events:none}.intro-inner{width:min(94vw,540px)}.intro-title{font-size:clamp(20px,5vw,30px);font-weight:normal;color:var(--rose);margin:0 0 8px}.intro-subtitle{color:#89636f;margin:0 0 25px;font-size:15px;letter-spacing:2px}.envelope{width:min(88vw,460px);height:clamp(210px,55vw,285px);margin:auto;position:relative;perspective:900px;filter:drop-shadow(0 15px 18px #89576a44)}.envelope-back{position:absolute;inset:0;background:#dbaebd;border:2px solid #c69b72;border-radius:5px}.letter{position:absolute;left:8%;right:8%;top:11%;height:77%;background:#fffaf5;border:2px solid #d4b47a;border-radius:6px;padding:20px 8px;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:transform 1s .25s ease;z-index:2}.letter strong{font-size:clamp(25px,6vw,39px);font-weight:normal;color:var(--rose)}.letter span{font-size:13px;letter-spacing:3px;color:var(--gold);margin-bottom:8px}.envelope-front{position:absolute;inset:0;z-index:3;background:#e7beca;clip-path:polygon(0 0,50% 53%,100% 0,100% 100%,0 100%);border-radius:5px}.envelope-front:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#e9c4cf 0%,#d9aab9 100%);clip-path:polygon(0 100%,50% 47%,100% 100%)}.flap{position:absolute;left:0;right:0;top:0;height:56%;background:#efcbd4;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .85s ease;z-index:5;backface-visibility:hidden}.seal{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);z-index:6;width:78px;height:78px;border-radius:50%;border:3px solid #f5dfad;background:radial-gradient(circle,#d8b777,#a78243);color:white;font:28px Georgia,serif;box-shadow:0 3px 10px #7d543e66;cursor:pointer;transition:opacity .3s}.seal:focus-visible{outline:3px solid #754253;outline-offset:5px}.intro-hint{font-size:15px;margin:25px 0 0;color:#805766}.envelope.open .flap{transform:rotateX(180deg);z-index:1}.envelope.open .seal{opacity:0;pointer-events:none}.envelope.open .letter{transform:translateY(-75px)}#musicToggle{position:fixed;right:15px;bottom:17px;z-index:100;background:#fffaf9;color:var(--rose);border:1px solid #d4b47a;border-radius:30px;padding:12px 16px;box-shadow:0 3px 12px #9e607533;cursor:pointer;font:14px Arial,sans-serif;display:none}#musicToggle.visible{display:block}.music-credit{font-size:12px;line-height:1.5;margin:15px auto 0;max-width:580px}.music-credit a{color:#79536b}@media(prefers-reduced-motion:reduce){.flap,.letter,#intro{transition-duration:.01ms!important}}
 </style>
 </head>
 <body class="locked">
-<div id="intro" role="dialog" aria-modal="true" aria-label="Abrir invitación de Daminy Vianey">
-  <div class="intro-inner">
-    <h2 class="intro-title">Una invitación muy especial</h2>
-    <p class="intro-subtitle">MIS XV AÑOS</p>
-    <div class="envelope" id="envelope">
-      <div class="envelope-back"></div>
-      <div class="letter"><span>TE INVITO A CELEBRAR</span><strong>Daminy Vianey</strong><span>MIS XV AÑOS</span></div>
-      <div class="envelope-front"></div>
-      <div class="flap"></div>
-      <button class="seal" id="openEnvelope" aria-label="Abrir invitación">DV</button>
-    </div>
-    <p class="intro-hint">Toca el sello DV para abrir el sobre</p>
-  </div>
-</div>
-<button id="musicToggle" type="button" aria-label="Pausar música">♫ Pausar música</button>
-<audio id="backgroundMusic" src="There20Romance.mp3" preload="none" loop></audio>
+<!-- Íconos SVG incorporados al HTML: no requieren descargar archivos externos -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+<symbol id="i-church" viewBox="0 0 24 24"><path d="M12 2v5M9.5 4.5h5M5 22V11l7-5 7 5v11M3 22h18M9 22v-7h6v7M5 12h14"/></symbol>
+<symbol id="i-cheers" viewBox="0 0 24 24"><path d="M3 3l1 6a4 4 0 0 0 4 3 4 4 0 0 0 4-3l1-6H3ZM8 12v8M5 22h6M11 7l1 2M21 3l-1 6a4 4 0 0 1-4 3 4 4 0 0 1-4-3l-1-6h10ZM16 12v8M13 22h6"/></symbol>
+<symbol id="i-food" viewBox="0 0 24 24"><path d="M4 2v8M7 2v8M10 2v8M4 7h6M7 10v12M17 22V2c4 3 4 10 0 12M17 14h4"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13M9 8l12-2M9 18a3 2 0 1 1-6 0 3 2 0 0 1 6 0ZM21 16a3 2 0 1 1-6 0 3 2 0 0 1 6 0Z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 5.7a5.5 5.5 0 0 0-7.8 0L12 6.8l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.5a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 2 2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2L12 2ZM19 2v4M17 4h4M4 18v4M2 20h4"/></symbol>
+<symbol id="i-dinner" viewBox="0 0 24 24"><path d="M3 13a9 9 0 0 1 18 0H3ZM2 17h20M12 4V2M5 21h14M6 17l1 4M18 17l-1 4"/></symbol>
+<symbol id="i-dance" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M6 6l12 12M18 6 6 18M9 3l-2 9 2 9M15 3l2 9-2 9"/></symbol>
+<symbol id="i-formal" viewBox="0 0 24 24"><path d="M8 3 4 5 2 11l4 2v9h12v-9l4-2-2-6-4-2-4 4-4-4ZM8 3l4 4 4-4M12 7v15"/></symbol>
+</svg>
+<div id="intro" role="dialog" aria-modal="true" aria-label="Abrir invitación de Daminy Vianey"><div class="intro-inner"><h2 class="intro-title">Una invitación muy especial</h2><p class="intro-subtitle">MIS XV AÑOS</p><div class="envelope" id="envelope"><div class="envelope-back"></div><div class="letter"><span>TE INVITO A CELEBRAR</span><strong>Daminy Vianey</strong><span>MIS XV AÑOS</span></div><div class="envelope-front"></div><div class="flap"></div><button class="seal" id="openEnvelope" aria-label="Abrir invitación">DV</button></div><p class="intro-hint">Toca el sello DV para abrir el sobre</p></div></div>
+<button id="musicToggle" type="button" aria-label="Pausar música">♫ Pausar música</button><audio id="backgroundMusic" src="There20Romance.mp3" preload="none" loop></audio>
 <header><div class="eyebrow">Mis XV años</div><h1>Daminy Vianey</h1><p>Sábado 16 de enero de 2027</p></header>
 <section><img class="photo" src="foto1.png" alt="Daminy Vianey en un jardín floral"><h2>Un día inolvidable</h2><p>Con mucha ilusión quiero compartir contigo la alegría de celebrar mis quince años.</p><p>Con el cariño de mis padres<br><b>Viridiana Silverio Garcia</b><br><b>Adrian Martinez Rojas</b></p><p>Y mis padrinos<br><b>Berenice Silverio Garcia</b><br><b>Sergio Ordaz</b></p></section>
 <section><img class="photo" src="foto2.png" alt="Daminy Vianey entre flores y mariposas"><h2>Cuenta regresiva</h2><div class="counter" id="counter">Calculando…</div></section>
-<section><div class="card"><div class="eyebrow">Ceremonia religiosa</div><h2>2:30 p. m.</h2><p><b>Parroquia Cristo de la Agonía y Nuestra Señora de Guadalupe</b><br>Estados Unidos No. 2, México 68</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia%20Cristo%20de%20la%20Agon%C3%ADa%20y%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe%20Estados%20Unidos%202%20M%C3%A9xico%2068">Cómo llegar a la iglesia</a></div>
-<div class="card"><div class="eyebrow">Recepción</div><h2>4:30 p. m.</h2><p><b>Salón La Mora</b></p><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/S8iFg61WrcTnQC7m6?g_st=aw">Cómo llegar al salón</a></div></section>
+<section aria-label="Ceremonia y recepción"><div class="card"><span class="event-icon" aria-hidden="true"><svg><use href="#i-church"/></svg></span><div class="eyebrow">Ceremonia religiosa</div><h2>2:30 p. m.</h2><p><b>Parroquia Cristo de la Agonía y Nuestra Señora de Guadalupe</b><br>Estados Unidos No. 2, México 68</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Parroquia%20Cristo%20de%20la%20Agon%C3%ADa%20y%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe%20Estados%20Unidos%202%20M%C3%A9xico%2068">Cómo llegar a la iglesia</a></div><div class="card"><span class="event-icon" aria-hidden="true"><svg><use href="#i-cheers"/></svg></span><div class="eyebrow">Recepción</div><h2>4:00 p. m.</h2><p><b>Salón La Mora</b></p><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/S8iFg61WrcTnQC7m6?g_st=aw">Cómo llegar al salón</a></div></section>
+<section aria-labelledby="itinerary-title"><div class="eyebrow">Celebremos juntos</div><h2 id="itinerary-title">Itinerario</h2><div class="timeline">
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-church"/></svg></span><div class="timeline-copy"><p class="timeline-time">2:30 p. m.</p><p class="timeline-name">Ceremonia</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-cheers"/></svg></span><div class="timeline-copy"><p class="timeline-time">4:00 p. m.</p><p class="timeline-name">Recepción</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-food"/></svg></span><div class="timeline-copy"><p class="timeline-time">4:00 p. m.</p><p class="timeline-name">Comida</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-music"/></svg></span><div class="timeline-copy"><p class="timeline-time">5:00 p. m.</p><p class="timeline-name">Baile</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-heart"/></svg></span><div class="timeline-copy"><p class="timeline-time">8:00 p. m.</p><p class="timeline-name">Vals</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-sparkles"/></svg></span><div class="timeline-copy"><p class="timeline-time">9:00 p. m.</p><p class="timeline-name">Show</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-dinner"/></svg></span><div class="timeline-copy"><p class="timeline-time">10:00 p. m.</p><p class="timeline-name">Cena</p></div></div>
+<div class="timeline-item"><span class="event-icon" aria-hidden="true"><svg><use href="#i-dance"/></svg></span><div class="timeline-copy"><p class="timeline-time">10:30 p. m.</p><p class="timeline-name">Baile moderno</p></div></div>
+</div></section>
+<section aria-labelledby="dress-title"><div class="card dress-card"><span class="event-icon" aria-hidden="true"><svg><use href="#i-formal"/></svg></span><div class="eyebrow">Para esta ocasión especial</div><h2 id="dress-title">Código de vestimenta</h2><p style="font-size:24px;color:var(--rose);margin-bottom:0">Formal</p></div></section>
 <section><img class="photo" src="foto3.png" alt="Retrato de Daminy Vianey"><h2>Confirma tu asistencia</h2><div class="card"><p id="family"></p><p id="tickets"></p><label>¿Cuántas personas asistirán? <input id="attending" type="number" min="0" value="0"></label><p><button class="btn" id="confirm">Confirmar por WhatsApp</button></p><small>Tu confirmación se enviará por WhatsApp. Revisa el mensaje y presiona Enviar para completar el proceso.</small></div></section>
 <footer>Con cariño, Daminy Vianey ♡<p class="music-credit">Música: “There is Romance” — Kevin MacLeod (<a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a>). Licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0</a>.</p></footer>
 <script>
 const q=new URLSearchParams(location.search),name=q.get('familia')||'Familia de prueba',tickets=Math.max(0,Number.parseInt(q.get('boletos')||'6',10)||0);
-document.getElementById('family').textContent=name;
-document.getElementById('tickets').textContent='Boletos asignados: '+tickets;
+document.getElementById('family').textContent=name;document.getElementById('tickets').textContent='Boletos asignados: '+tickets;
 const n=document.getElementById('attending');n.max=tickets;n.value=tickets;
-document.getElementById('confirm').onclick=()=>{
-  const count=Number(n.value);
-  if(!Number.isInteger(count)||count<0||count>tickets){alert('Confirma entre 0 y '+tickets+' asistentes. Para solicitar más lugares, contacta a los papás.');return;}
-  const msg=`Confirmamos nuestra asistencia a los XV años de Daminy Vianey.\n${name}\nBoletos asignados: ${tickets}\nAsistentes confirmados: ${count}\nLugares liberados: ${tickets-count}`;
-  const numeroWhatsApp='525535041449';
-  window.open('https://wa.me/'+numeroWhatsApp+'?text='+encodeURIComponent(msg),'_blank','noopener');
-};
-function countdown(){const end=new Date('2027-01-16T14:30:00-06:00').getTime(),ms=Math.max(0,end-Date.now()),d=Math.floor(ms/86400000),h=Math.floor(ms%86400000/3600000),m=Math.floor(ms%3600000/60000);document.getElementById('counter').textContent=ms?`${d} días · ${h} horas · ${m} minutos`:'¡Llegó el gran día!';}
-countdown();setInterval(countdown,60000);
-const intro=document.getElementById('intro'),envelope=document.getElementById('envelope'),music=document.getElementById('backgroundMusic'),musicToggle=document.getElementById('musicToggle');
-let opened=false;
-document.getElementById('openEnvelope').addEventListener('click',()=>{
-  if(opened)return;
-  opened=true;
-  envelope.classList.add('open');
-  musicToggle.classList.add('visible');
-  music.play().then(()=>{musicToggle.textContent='♫ Pausar música';musicToggle.setAttribute('aria-label','Pausar música');}).catch(()=>{musicToggle.textContent='♫ Reproducir música';musicToggle.setAttribute('aria-label','Reproducir música');});
-  setTimeout(()=>{intro.classList.add('hidden');document.body.classList.remove('locked');},1350);
-});
-musicToggle.addEventListener('click',()=>{
-  if(music.paused){music.play().then(()=>{musicToggle.textContent='♫ Pausar música';musicToggle.setAttribute('aria-label','Pausar música');}).catch(()=>{alert('No se pudo reproducir la música.');});}
-  else{music.pause();musicToggle.textContent='♫ Reproducir música';musicToggle.setAttribute('aria-label','Reproducir música');}
-});
+document.getElementById('confirm').onclick=()=>{const count=Number(n.value);if(!Number.isInteger(count)||count<0||count>tickets){alert('Confirma entre 0 y '+tickets+' asistentes. Para solicitar más lugares, contacta a los papás.');return;}const msg=`Confirmamos nuestra asistencia a los XV años de Daminy Vianey.\n${name}\nBoletos asignados: ${tickets}\nAsistentes confirmados: ${count}\nLugares liberados: ${tickets-count}`;const numeroWhatsApp='525535041449';window.open('https://wa.me/'+numeroWhatsApp+'?text='+encodeURIComponent(msg),'_blank','noopener');};
+function countdown(){const end=new Date('2027-01-16T14:30:00-06:00').getTime(),ms=Math.max(0,end-Date.now()),d=Math.floor(ms/86400000),h=Math.floor(ms%86400000/3600000),m=Math.floor(ms%3600000/60000);document.getElementById('counter').textContent=ms?`${d} días · ${h} horas · ${m} minutos`:'¡Llegó el gran día!';}countdown();setInterval(countdown,60000);
+const intro=document.getElementById('intro'),envelope=document.getElementById('envelope'),music=document.getElementById('backgroundMusic'),musicToggle=document.getElementById('musicToggle');let opened=false;
+document.getElementById('openEnvelope').addEventListener('click',()=>{if(opened)return;opened=true;envelope.classList.add('open');musicToggle.classList.add('visible');music.play().then(()=>{musicToggle.textContent='♫ Pausar música';musicToggle.setAttribute('aria-label','Pausar música');}).catch(()=>{musicToggle.textContent='♫ Reproducir música';musicToggle.setAttribute('aria-label','Reproducir música');});setTimeout(()=>{intro.classList.add('hidden');document.body.classList.remove('locked');},1350);});
+musicToggle.addEventListener('click',()=>{if(music.paused){music.play().then(()=>{musicToggle.textContent='♫ Pausar música';musicToggle.setAttribute('aria-label','Pausar música');}).catch(()=>{alert('No se pudo reproducir la música.');});}else{music.pause();musicToggle.textContent='♫ Reproducir música';musicToggle.setAttribute('aria-label','Reproducir música');}});
 </script>
 </body>
 </html>
